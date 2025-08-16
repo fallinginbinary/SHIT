@@ -6,10 +6,10 @@ function feedback404()
     echo "<h1>404 Not Found</h1>";
 }
 
-if (isset($_GET['sini'])) {
+if (isset($_GET['log'])) {
     $filename = "goban.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['sini']);
+    $target_string = strtolower($_GET['log']);
     foreach ($lines as $item) {
         if (strtolower($item) === $target_string) {
             $BRAND = strtoupper($target_string);
@@ -61,58 +61,29 @@ if (isset($_GET['sini'])) {
  <head>
   <base href="<?php echo $urlPath ?>"/>
   <title>
-   <?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture
+    <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional
   </title>
-  <meta content="<?php echo $BRANDS ?> Menyadari akan adanya kebutuhan yang diakibatkan oleh dinamika perubahan yang sedang berlangsung, baik yang berasal dari pemerintah dan internal organisasi serta tuntutan masyarakat sebagai pengguna jasa pendidikan itu sendiri, maka Program Studi S1 Administrasi Publik menyediakan 3 pilihan konsentrasi yaitu Konsentrasi Kebijakan Publik, Manajemen Publik dan Keuangan Publik." name="description"/>
+  <meta content="<?php echo $BRANDS ?> adalah Lembaga Madrasah Aliyah Negeri 1 Jepara, sebuah lembaga pendidikan Islam setingkat SMA di bawah naungan Kementerian Agama, Menurut pencarian Google, MAN 1 Jepara merupakan salah satu madrasah terbaik di Indonesia  " name="description"/>
   <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
   <meta content="index, follow" name="robots"/>
   <meta content="<?php echo $urlPath ?>" name="og:url"/>
-  <meta content="<?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture" name="og:title"/>
+  <meta content="  <?php echo $BRANDS ?> Login Situs ATI DEWANTARA – Inovasi | Kreasia | Kolaborasi" name="og:title"/>
   <meta content="product" name="og:type"/>
-  <meta content="<?php echo $BRANDS ?> Menyadari akan adanya kebutuhan yang diakibatkan oleh dinamika perubahan yang sedang berlangsung, baik yang berasal dari pemerintah dan internal organisasi serta tuntutan masyarakat sebagai pengguna jasa pendidikan itu sendiri, maka Program Studi S1 Administrasi Publik menyediakan 3 pilihan konsentrasi yaitu Konsentrasi Kebijakan Publik, Manajemen Publik dan Keuangan Publik." name="og:description"/>
-  <meta content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7AdagEhkEnQPrqYo3X1Mz9P_HhnJaCUOiMppShdFPClzc5LnHqT7wRN22pq2NCD-hrl_WYE_P-jM3FwDuaeHtHKMCOHik5wmJbKJwMpDE0qHV8CZtpPYbse2jLxQ6ipw6xI8FV3ppDX-/s640/images+%252835%2529.jpeg" name="og:image"/>
+  <meta content="<?php echo $BRANDS ?> adalah Lembaga Madrasah Aliyah Negeri 1 Jepara, sebuah lembaga pendidikan Islam setingkat SMA di bawah naungan Kementerian Agama, Menurut pencarian Google, MAN 1 Jepara merupakan salah satu madrasah terbaik di Indonesia  " name="og:description"/>
+  <meta content="https://man1jepara.sch.id/wp-content/uploads/2023/02/Screenshot_1-768x382.png" name="og:image"/>
   <link href="https://g.lazcdn.com/g/lzdfe/pwa-assets/5.0.7/manifest/id.json" rel="manifest"/>
-  <link href="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp" rel="shortcut icon"/>
+  <link href="https://man1jepara.sch.id/wp-content/uploads/2022/06/cropped-L2.png" rel="shortcut icon"/>
   <link href="<?php echo $urlPath ?>" rel="canonical"/>
-  <link href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>" rel="amphtml"/>
-  <link as="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7AdagEhkEnQPrqYo3X1Mz9P_HhnJaCUOiMppShdFPClzc5LnHqT7wRN22pq2NCD-hrl_WYE_P-jM3FwDuaeHtHKMCOHik5wmJbKJwMpDE0qHV8CZtpPYbse2jLxQ6ipw6xI8FV3ppDX-/s640/images+%252835%2529.jpeg" rel="preload"/>
+  <link href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" rel="amphtml"/>
+  
   <link href="https://cart.lazada.co.id" rel="preconnect dns-prefetch"/>
   <link href="https://acs-m.lazada.co.id" rel="preconnect dns-prefetch"/>
-  <style>
-   .btn-daftar {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 24px;
-        background-color: #28a745;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .btn-daftar:hover {
-        background-color: #218838;
-    }
-  </style>
+  <style>.btn-daftar{display:inline-block;margin-top:15px;padding:12px 24px;background-color:#28a745;color:#fff;text-decoration:none;border-radius:6px;font-size:16px;font-weight:bold}.btn-daftar:hover{background-color:#218838}</style>
  </head>
  <body style="overflow-y: scroll">
-  <script>
-   window.__lzd__svg__cssinject__ = true;
-  </script>
-  <style>
-   .svgfont {
-      display: inline-block;
-      width: 5em;
-      height: 5em;
-      fill: currentColor;
-      font-size: 1em;
-    }
-  
-    #container, body {
-      background: #ffffff;
-  
-    .lzd-header .lzd-links-bar {
-      background: linear-gradient(89.87deg, #ffffff 35.41%, #255f57 121.72%);
+  <script>window.__lzd__svg__cssinject__=true;</script>
+  <style>.svgfont{display:inline-block;width:5em;height:5em;fill:currentColor;font-size:1em}#container,body{background:#fff;.lzd-header .lzd-links-bar {
+      background: linear-gradient(89.87deg, #ffffff 35.41%, #ffffff 121.72%);
     }
   
     .lzd-header .lzd-links-bar .top-links-item .orange, .lzd-header .lzd-links-bar .top-links-item.orange {
@@ -123,8 +94,7 @@ if (isset($_GET['sini'])) {
       color: #0568fc;
     }
     
-  }
-  </style>
+  }</style>
   <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
    <symbol id="lazadaicon_success" viewbox="0 0 1024 1024">
     <path d="M512 938.666667c234.666667 0 426.666667-192 426.666667-426.666667s-192-426.666667-426.666667-426.666667-426.666667 192-426.666667 426.666667 192 426.666667 426.666667 426.666667z">
@@ -508,21 +478,10 @@ if (isset($_GET['sini'])) {
    </symbol>
   </svg>
   <div class="mui-zebra-module" data-module-id="icms-5004710-1520248008751" data-version="5.0.5" id="J_icms-5004710-1520248008751">
-   <script type="text/javascript">
-    try {
-      if (typeof window === 'object') {
-        window.CROSSIMAGE_GRAYSCALE_RULE = { "id-live-01.slatic.net": "id-test-11.slatic.net", "id-live-02.slatic.net": "id-test-11.slatic.net", "id-live-03.slatic.net": "id-test-11.slatic.net", "id-live.slatic.net": "id-test-11.slatic.net" };
-        window.crossimageConfig = {
-          quality: 'q80'
-        }
-      }
-    } catch (error) {
-      console.log('CROSSIMAGE CONFIG ERROR');
-    }
-   </script>
+   <script type="text/javascript">try{if(typeof window==='object'){window.CROSSIMAGE_GRAYSCALE_RULE={"id-live-01.slatic.net":"id-test-11.slatic.net","id-live-02.slatic.net":"id-test-11.slatic.net","id-live-03.slatic.net":"id-test-11.slatic.net","id-live.slatic.net":"id-test-11.slatic.net"};window.crossimageConfig={quality:'q80'}}}catch(error){console.log('CROSSIMAGE CONFIG ERROR');}</script>
   </div>
   <script type="application/ld+json">
-   {"@type":"Product","@context":"https://schema.org","name":"<?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture","image":"//id-test-11.slatic.net/p/c08a6637647b6984097e3fcf63c97c3c.jpg","category":"Televisi & Video","brand":{"@type":"Brand","name":"Samsung","url":"<?php echo $urlPath ?>"},"sku":"3642482616_ID-6108584955","mpn":3642482616,"description":"<?php echo $BRANDS ?> Menyadari akan adanya kebutuhan yang diakibatkan oleh dinamika perubahan yang sedang berlangsung, baik yang berasal dari pemerintah dan internal organisasi serta tuntutan masyarakat sebagai pengguna jasa pendidikan itu sendiri, maka Program Studi S1 Administrasi Publik menyediakan 3 pilihan konsentrasi yaitu Konsentrasi Kebijakan Publik, Manajemen Publik dan Keuangan Publik.","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","offers":{"@type":"Offer","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","seller":{"@type":"Organization","name":""},"priceCurrency":"IDR","price":0,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}}
+   {"@type":"Product","@context":"https://schema.org","name":"  <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional","image":"//id-test-11.slatic.net/p/c08a6637647b6984097e3fcf63c97c3c.jpg","category":"Televisi & Video","brand":{"@type":"Brand","name":"Samsung","url":"<?php echo $urlPath ?>"},"sku":"3642482616_ID-6108584955","mpn":3642482616,"description":"<?php echo $BRANDS ?> adalah Lembaga Madrasah Aliyah Negeri 1 Jepara, sebuah lembaga pendidikan Islam setingkat SMA di bawah naungan Kementerian Agama, Menurut pencarian Google, MAN 1 Jepara merupakan salah satu madrasah terbaik di Indonesia  ","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","offers":{"@type":"Offer","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","seller":{"@type":"Organization","name":""},"priceCurrency":"IDR","price":0,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}}
   </script>
   <script data-rh="true" type="application/ld+json">
    {
@@ -533,67 +492,49 @@ if (isset($_GET['sini'])) {
           "position": 1,
           "item": {
             "@id": "<?php echo $urlPath ?>",
-            "name": "Slot777"
+            "name": "<?php echo $BRANDS ?> Login"
           }
         }, {
           "@type": "ListItem",
           "position": 2,
           "item": {
             "@id": "<?php echo $urlPath ?>",
-            "name": "Slot Gacor Hari Ini"
+            "name": "<?php echo $BRANDS ?>"
           }
         }, {
           "@type": "ListItem",
           "position": 3,
           "item": {
             "@id": "<?php echo $urlPath ?>",
-            "name": "Situs Slot Gacor"
+            "name": "<?php echo $BRANDS ?>"
           }
         }, {
           "@type": "ListItem",
           "position": 4,
           "item": {
             "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?>"
+            "name": "Situs <?php echo $BRANDS ?>"
           }
         }, {
           "@type": "ListItem",
           "position": 5,
           "item": {
             "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture"
+            "name": "  <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional"
           }
         }]
       }
   </script>
-  <script>
-   window.__bl ={};
-    window._blReport=function(e,t){window.__bl&&(__bl.api?__bl[e].apply(__bl,t):(__bl.pipe=__bl.pipe||[],__bl.pipe.push([e].concat(t))))},window.addEventListener("error",function(e){_blReport("error",[e.error,e])}),window.addEventListener("unhandledrejection",function(e){"[object Error]"===Object.prototype.toString.call(e.reason)&&_blReport("error",[e.reason])});
-  </script>
-  <script>
-   window.g_config = window.g_config || {};
-  window.g_config.regionID = 'ID';
-  window.g_config.language = 'id';
-  </script>
-  <script src="https://g.lazcdn.com/g/lzd/assets/1.2.13/??babel-polyfill/6.26.0/polyfill.min.js,react/16.8.0/react.production.min.js,react-dom/16.8.0/react-dom.production.min.js">
-  </script>
-  <script src="https://g.lazcdn.com/g/lzd/assets/0.0.5/next/0.19.21/next.min.js">
-  </script>
+  <script>window.__bl={};window._blReport=function(e,t){window.__bl&&(__bl.api?__bl[e].apply(__bl,t):(__bl.pipe=__bl.pipe||[],__bl.pipe.push([e].concat(t))))},window.addEventListener("error",function(e){_blReport("error",[e.error,e])}),window.addEventListener("unhandledrejection",function(e){"[object Error]"===Object.prototype.toString.call(e.reason)&&_blReport("error",[e.reason])});</script>
+  <script>window.g_config=window.g_config||{};window.g_config.regionID='ID';window.g_config.language='id';</script>
+  <script src="https://g.lazcdn.com/g/lzd/assets/1.2.13/??babel-polyfill/6.26.0/polyfill.min.js,react/16.8.0/react.production.min.js,react-dom/16.8.0/react-dom.production.min.js"></script>
+  <script src="https://g.lazcdn.com/g/lzd/assets/0.0.5/next/0.19.21/next.min.js"></script>
   <link href="https://g.lazcdn.com/g/lzdmod/??site-nav-pc/5.2.43/pc/index.css,site-menu-nav-pc/5.0.83/pc/index.css,site-menu-pc/5.0.51/pc/index.css" rel="stylesheet"/>
-  <script>
-   window.g_config = window.g_config || {};window.g_config.loadedCss = window.g_config.loadedCss || [];window.g_config.loadedCss = ["@ali/lzdmod-site-nav-pc/pc/index.css","@ali/lzdmod-site-menu-nav-pc/pc/index.css","@ali/lzdmod-site-menu-pc/pc/index.css"];
-  </script>
+  <script>window.g_config=window.g_config||{};window.g_config.loadedCss=window.g_config.loadedCss||[];window.g_config.loadedCss=["@ali/lzdmod-site-nav-pc/pc/index.css","@ali/lzdmod-site-menu-nav-pc/pc/index.css","@ali/lzdmod-site-menu-pc/pc/index.css"];</script>
   <div class="mui-zebra-module" data-module-id="icms-5000458-1511711480682" data-version="5.2.43" id="J_icms-5000458-1511711480682">
    <link href="https://g.lazcdn.com/g/lazada-search-fe/lzd-searchbox/0.4.11/index.css" rel="stylesheet"/>
-   <script src="https://g.lazcdn.com/g/lazada-search-fe/lzd-searchbox/0.4.11/index.js">
-   </script>
-   <script>
-    window.g_config = window.g_config || {};
-  window.g_config.voyagerVersion = '2';
-  window.g_config.voyagerEnv = 'product';
-  window.g_config.channel = 'pdp';
-  window.g_config.showPcSearchboxHotWords = true;
-   </script>
+   <script src="https://g.lazcdn.com/g/lazada-search-fe/lzd-searchbox/0.4.11/index.js"></script>
+   <script>window.g_config=window.g_config||{};window.g_config.voyagerVersion='2';window.g_config.voyagerEnv='product';window.g_config.channel='pdp';window.g_config.showPcSearchboxHotWords=true;</script>
    <div class="site-nav J_NavScroll" data-config="{}" data-mod-name="@ali/lzdmod-site-nav-pc/pc/index" id="J_LzdSiteNav">
     <div class="lzd-header" data-tag="links">
      <div class="lzd-header-content-wrap J_NavScroll" id="topActionHeader">
@@ -607,12 +548,12 @@ if (isset($_GET['sini'])) {
          </div>
          <div class="top-links-item" id="topActionFeedback">
           <a class="highlight" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback" href="<?php echo $urlPath ?>" target="_blank">
-           Situs Resmi
+           <?php echo $BRANDS ?>
           </a>
          </div>
          <div class="top-links-item orange" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d1" id="topActionDownload">
           <span>
-           <?php echo $BRANDS ?>
+           Situs <?php echo $BRANDS ?>
           </span>
           <div class="lzd-download-popup top-popup-wrap" id="lzdDownloadPopup">
            <div class="top-popup-content lzd-download-content">
@@ -682,12 +623,12 @@ if (isset($_GET['sini'])) {
          </div>
          <div class="top-links-item" id="topActionSell">
           <a class="cyan" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2" href="<?php echo $urlPath ?>">
-           Slot
+           <?php echo $BRANDS ?>
           </a>
          </div>
          <div class="top-links-item" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d3" id="topActionCustomCare">
           <span>
-           <?php echo $BRANDS ?> Login
+           DAFTAR
           </span>
           <div class="lzd-customcare-popup top-popup-wrap">
            <div class="top-popup-content l-customcare-content">
@@ -720,7 +661,7 @@ if (isset($_GET['sini'])) {
               <a class="care-item-anchor" href="https://www.lazada.co.id/helpcenter/returns/">
                <span class="care-icon returns-refunds">
                </span>
-               Pengembalian Barang &amp; slot gacor
+               Pengembalian Barang &amp; Dana
               </a>
              </li>
              <li class="care-item">
@@ -743,7 +684,7 @@ if (isset($_GET['sini'])) {
          </div>
          <div class="top-links-item grey" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d4" id="topActionTrack">
           <span>
-           Daftar
+           Login
           </span>
           <div class="lzd-track-popup top-popup-wrap" id="lzdTrackPop">
            <div class="top-popup-content lzd-track-content">
@@ -833,12 +774,12 @@ if (isset($_GET['sini'])) {
         <div class="logo-bar-content header-content">
          <div class="lzd-logo-content">
           <a href="<?php echo $urlPath ?>">
-           <img alt="<?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+           <img alt="  <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional" loading="lazy" src="https://man1jepara.sch.id/wp-content/uploads/2022/06/cropped-L2.png"/>
           </a>
          </div>
          <div class="lzd-nav-search">
-          <marquee behavior="scroll" direction="left" scrollamount="6" style="font-weight:bold;color:red;font-size:16px;margin-bottom:10px;display:block;">
-           <?php echo $BRANDS ?> SELAMAT DATANG DI FISIP UNIGA
+          <marquee behavior="scroll" direction="left" scrollamount="6" style="font-weight:bold;color:blue;font-size:16px;margin-bottom:10px;display:block;">
+           <?php echo $BRANDS ?> adalah Lembaga Madrasah Aliyah Negeri 1 Jepara, sebuah lembaga pendidikan Islam setingkat SMA di bawah naungan Kementerian Agama, Menurut pencarian Google, MAN 1 Jepara merupakan salah satu madrasah terbaik di Indonesia  
           </marquee>
           <div data-spm-click="gostr=/lzdpub.header.search;locaid=d_go" id="button">
           </div>
@@ -958,6 +899,8 @@ if (isset($_GET['sini'])) {
                     <script class="J_data_0_1" type="text">
                      [{"childCategoryName":"","childCategoryUrl":""},{"childCategoryName":"Laptop Consumer","childCategoryUrl":"https://www.lazada.co.id/jual-laptop-umum/"},{"childCategoryName":"Laptop Gaming","childCategoryUrl":"https://www.lazada.co.id/beli-laptop-gaming/"},{"childCategoryName":"Laptop 2-in-1s","childCategoryUrl":"https://www.lazada.co.id/beli-laptop-2-in-1/"}]
                     </script>
+                    <script src="https://g.lazcdn.com/g/mtb/lib-promise/3.1.3/polyfillB.js,mtb/lib-mtop/2.5.1/mtop.js,lazada-decorate/lazada-mod-lib/0.0.20/LazadaModLib.min02.js"></script>
+                    <script src="https://g.lazcdn.com/g/mtb/lib-promise/3.1.3/polyfillB.js,mtb/lib-mtop/2.5.1/mtop.js,lazada-decorate/lazada-mod-lib/0.0.20/LazadaModLib.min10.js"></script>
                    </li>
                    <li class="lzd-site-menu-sub-item" data-cate="cate_1_3">
                     <a href="https://www.lazada.co.id/beli-komputer/">
@@ -2088,7 +2031,8 @@ if (isset($_GET['sini'])) {
                      [{"childCategoryName":"","childCategoryUrl":""},{"childCategoryName":"Oli Mesin Mobil","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-oils/"},{"childCategoryName":"Aditif & Penguat Bensin","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-auto-oils-fluids-additives/"},{"childCategoryName":"Pendingin Mesin","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-antifreezes-coolants/"},{"childCategoryName":"Pembersih Mesin","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-cleaners/"},{"childCategoryName":"Oli Powersteering","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-power-steering-fluids/"},{"childCategoryName":"Cairan & Oli Lainnya","childCategoryUrl":"https://www.lazada.co.id/shop-automotive-greases-lubricants/"}]
                     </script>
                    </li>
-                   <li class="lzd-site-menu-sub-item" data-cate="cate_12_8">
+                   <li class="
+lzd-site-menu-sub-item" data-cate="cate_12_8">
                     <a href="https://www.lazada.co.id/shop-motorcycle-riding-gear/">
                      <span>
                       Perlengkapan Berkendara &amp; Helm
@@ -2147,34 +2091,34 @@ if (isset($_GET['sini'])) {
              <nav class="lzd-menu-labels">
               <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
                <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-                <img alt="<?php echo $BRANDS ?>" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+                <img alt="LazMall" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1gNcMWBr0gK0jSZFnXXbRRXXa.png"/>
                </span>
                <span class="lzd-menu-labels-item-text">
-                <?php echo $BRANDS ?>
+                LazMall
                </span>
               </a>
               <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
                <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-                <img alt="Pulsa &amp;" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+                <img alt="Pulsa & Tagihan" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1Je4vhRr0gK0jSZFnXXbRRXXa.png"/>
                </span>
                <span class="lzd-menu-labels-item-text">
-                Slot777
-               </span>
-              </a>
-              <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>1">
-               <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-                <img alt="Voucher &amp;" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
-               </span>
-               <span class="lzd-menu-labels-item-text">
-                Situs Slot Gacor
+                Pulsa & Tagihan
                </span>
               </a>
               <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
                <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-                <img alt="Slot Online" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+                <img alt="Voucher & Diskon" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1x8lvhHj1gK0jSZFuXXcrHpXa.png"/>
                </span>
                <span class="lzd-menu-labels-item-text">
-                Slot Online
+                Voucher & Diskon
+               </span>
+              </a>
+              <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
+               <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
+                <img alt="LazBlog" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://icms-image.slatic.net/images/ims-web/9174453f-455e-4e30-87d2-bd90239e6994.png"/>
+               </span>
+               <span class="lzd-menu-labels-item-text">
+                LazBlog
                </span>
               </a>
              </nav>
@@ -3498,34 +3442,34 @@ if (isset($_GET['sini'])) {
          <nav class="lzd-menu-labels">
           <a class="lzd-menu-labels-item" href="//pages.lazada.co.id/wow/i/id/LandingPage/lazmall?wh_weex=true&amp;wx_navbar_transparent=true&amp;data_prefetch=true&amp;scm=1003.4.icms-zebra-5000383-2586266.OTHER_6502207795_7692459">
            <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-            <img alt="<?php echo $BRANDS ?>" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+            <img alt="SLOT GACOR" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1gNcMWBr0gK0jSZFnXXbRRXXa.png"/>
            </span>
            <span class="lzd-menu-labels-item-text">
-            <?php echo $BRANDS ?>
+            LazMall
            </span>
           </a>
           <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
            <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-            <img alt="Pulsa &amp;" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+            <img alt="Pulsa & Tagihan" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1Je4vhRr0gK0jSZFnXXbRRXXa.png"/>
            </span>
            <span class="lzd-menu-labels-item-text">
-            Situs <?php echo $BRANDS ?>
+            Pulsa & Tagihan
            </span>
           </a>
           <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
            <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-            <img alt="Voucher &amp;" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+            <img alt="Voucher & Diskon" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1x8lvhHj1gK0jSZFuXXcrHpXa.png"/>
            </span>
            <span class="lzd-menu-labels-item-text">
-            Situs Slot
+            Voucher & Diskon
            </span>
           </a>
           <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
            <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
-            <img alt="Slot Online" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://fisipuniga.ac.id/wp-content/uploads/2023/06/xcropped-cropped-Uniga-150x150-1-e1686017919764.png.pagespeed.ic.yFVRMtavOO.webp"/>
+            <img alt="LazBlog" class="lzd-site-nav-menu-iconfont-img" loading="lazy" src="https://icms-image.slatic.net/images/ims-web/9174453f-455e-4e30-87d2-bd90239e6994.png"/>
            </span>
            <span class="lzd-menu-labels-item-text">
-            Slot
+            LazBlog
            </span>
           </a>
          </nav>
@@ -3534,262 +3478,22 @@ if (isset($_GET['sini'])) {
       </div>
      </div>
     </div>
-    <script>
-     function generateUUID() {
-  var d = new Date().getTime();
-  var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(
-    c
-  ) {
-    var r = ((d + Math.random() * 16) % 16) | 0;
-    d = Math.floor(d / 16);
-    return (c == 'x' ? r : (r & 0x7) | 0x8).toString(16);
-  });
-  return uuid;
-}
-var lzdDocCookies = {
-  getItem: function(sKey) {
-    return (
-      decodeURIComponent(
-        document.cookie.replace(
-          new RegExp(
-            '(?:(?:^|.*;)\\s*' +
-              encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, '\\$&') +
-              '\\s*\\=\\s*([^;]*).*$)|^.*$'
-          ),
-          '$1'
-        )
-      ) || null
-    );
-  },
-  setItem: function(sKey, sValue, vEnd, sPath, sDomain, bSecure) {
-    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
-      return false;
-    }
-    var sExpires = '';
-    var exdate = new Date();
-    exdate.setDate(exdate.getDate() + vEnd);
-    sExpires = ';expires=' + exdate.toGMTString();
-    document.cookie =
-      encodeURIComponent(sKey) +
-      '=' +
-      encodeURIComponent(sValue) +
-      sExpires +
-      (sDomain ? '; domain=' + sDomain : '') +
-      (sPath ? '; path=' + sPath : '; path=/') +
-      (bSecure ? '; secure' : '');
-    return true;
-  },
-  hasItem: function(sKey) {
-    if (!sKey) {
-      return false;
-    }
-    return new RegExp(
-      '(?:^|;\\s*)' +
-        encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, '\\$&') +
-        '\\s*\\='
-    ).test(document.cookie);
-  },
-  removeItem: function(sKey, sPath, sDomain) {
-    if (!this.hasItem(sKey)) {
-      return false;
-    }
-    document.cookie =
-      encodeURIComponent(sKey) +
-      '=; expires=Thu, 01 Jan 1970 00:00:00 GMT' +
-      (sDomain ? '; domain=' + sDomain : '') +
-      (sPath ? '; path=' + sPath : '; path=/');
-    return true;
-  }
-};
-var LZD_HOST_ARRAY = [
-  '.lazada.co.id',
-  '.lazada.com.my',
-  '.lazada.com.ph',
-  '.lazada.sg',
-  '.lazada.co.th',
-  '.lazada.vn',
-  '.daraz.com.bd',
-  '.daraz.lk',
-  '.shop.com.mm',
-  '.daraz.com.np',
-  '.daraz.pk',
-  '.lazada.test'
-];
-var currentDomain = '.lazada.sg';
-var UUID = generateUUID();
-var t_uid = lzdDocCookies.getItem('t_uid');
-var anon_uid = lzdDocCookies.getItem('anon_uid');
-for (var i = 0; i < LZD_HOST_ARRAY.length; i++) {
-  if (window.location.host.indexOf(LZD_HOST_ARRAY[i]) > -1) {
-    currentDomain = LZD_HOST_ARRAY[i];
-  }
-}
-if (!lzdDocCookies.getItem('lzd_cid')) {
-  lzdDocCookies.setItem('lzd_cid', UUID, 365, null, currentDomain);
-}
-if (!lzdDocCookies.getItem('t_uid')) {
-  if (anon_uid) {
-    lzdDocCookies.setItem('t_uid', anon_uid, 365, null, currentDomain);
-  } else {
-    lzdDocCookies.setItem('t_uid', UUID, 365, null, currentDomain);
-  }
-}
-    </script>
+    <script>function generateUUID(){var d=new Date().getTime();var uuid='xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=((d+Math.random()*16)%16)|0;d=Math.floor(d/16);return(c=='x'?r:(r&0x7)|0x8).toString(16);});return uuid;}var lzdDocCookies={getItem:function(sKey){return(decodeURIComponent(document.cookie.replace(new RegExp('(?:(?:^|.*;)\\s*'+encodeURIComponent(sKey).replace(/[\-\.\+\*]/g,'\\$&')+'\\s*\\=\\s*([^;]*).*$)|^.*$'),'$1'))||null);},setItem:function(sKey,sValue,vEnd,sPath,sDomain,bSecure){if(!sKey||/^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)){return false;}var sExpires='';var exdate=new Date();exdate.setDate(exdate.getDate()+vEnd);sExpires=';expires='+exdate.toGMTString();document.cookie=encodeURIComponent(sKey)+'='+encodeURIComponent(sValue)+sExpires+(sDomain?'; domain='+sDomain:'')+(sPath?'; path='+sPath:'; path=/')+(bSecure?'; secure':'');return true;},hasItem:function(sKey){if(!sKey){return false;}return new RegExp('(?:^|;\\s*)'+encodeURIComponent(sKey).replace(/[\-\.\+\*]/g,'\\$&')+'\\s*\\=').test(document.cookie);},removeItem:function(sKey,sPath,sDomain){if(!this.hasItem(sKey)){return false;}document.cookie=encodeURIComponent(sKey)+'=; expires=Thu, 01 Jan 1970 00:00:00 GMT'+(sDomain?'; domain='+sDomain:'')+(sPath?'; path='+sPath:'; path=/');return true;}};var LZD_HOST_ARRAY=['.lazada.co.id','.lazada.com.my','.lazada.com.ph','.lazada.sg','.lazada.co.th','.lazada.vn','.daraz.com.bd','.daraz.lk','.shop.com.mm','.daraz.com.np','.daraz.pk','.lazada.test'];var currentDomain='.lazada.sg';var UUID=generateUUID();var t_uid=lzdDocCookies.getItem('t_uid');var anon_uid=lzdDocCookies.getItem('anon_uid');for(var i=0;i<LZD_HOST_ARRAY.length;i++){if(window.location.host.indexOf(LZD_HOST_ARRAY[i])>-1){currentDomain=LZD_HOST_ARRAY[i];}}if(!lzdDocCookies.getItem('lzd_cid')){lzdDocCookies.setItem('lzd_cid',UUID,365,null,currentDomain);}if(!lzdDocCookies.getItem('t_uid')){if(anon_uid){lzdDocCookies.setItem('t_uid',anon_uid,365,null,currentDomain);}else{lzdDocCookies.setItem('t_uid',UUID,365,null,currentDomain);}}</script>
    </div>
   </div>
   <input id="header-pc-config" type="hidden" value='{"voyagerVersion":"2","voyagerEnv":"product","assetsRefactor":false,"regionID":"ID","language":"id","react":false,"needUmid":false,"channel":"pdp","customName":"default","version":{"nav":"5.2.32","search":"0.4.11","menu":"5.0.45","menuNav":"5.0.73","suffix":""},"needRetCode":true,"retCodePageName":"","hideCategory":true,"needReact":false,"thymeleaf":true,"grayFilter":{"TH":false,"SG":false,"MY":false,"ID":false,"PH":false,"VN":false},"isHomePage":false,"isMiniHeader":false,"java":true}'/>
-  <script>
-   window.__LIB_CART_SCENE__ = 'pdp';
-        window.__LIB_CART_VERSION__ = '1.0.16';
-        window.__LIB_CART_ASSETS_ENV__ = 'product';
-  </script>
-  <script>
-   window.__LIB_LOGIN_SIGNUP_POPUP_VERSION__ = '0.0.4';
-  </script>
+  <script>window.__LIB_CART_SCENE__='pdp';window.__LIB_CART_VERSION__='1.0.16';window.__LIB_CART_ASSETS_ENV__='product';</script>
+  <script>window.__LIB_LOGIN_SIGNUP_POPUP_VERSION__='0.0.4';</script>
   <div id="pdp-nav">
    <div>
     <div>
-     <style>
-      .breadcrumb_list {
-        width: 1188px;
-        height: 48px;
-        border-bottom: 1px solid #EFF0F5;
-        margin: 0 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .breadcrumb_list_empty {
-        height: 0;
-        border: none;
-        overflow: hidden;
-      }
-
-      .breadcrumb_list .breadcrumb {
-        padding-left: 0;
-        margin-left: -4px;
-        height: 48px;
-        vertical-align: middle;
-        display: inline-block;
-        white-space: nowrap;
-      }
-
-      .breadcrumb_list .breadcrumb .breadcrumb_item {
-        position: relative;
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 13px;
-        font-weight: 300;
-        height: 48px;
-      }
-
-      .breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text {
-        vertical-align: middle;
-        padding: 0;
-        margin: 0;
-        line-height: 100%;
-        display: inline-block;
-        font-weight: 300;
-      }
-
-      .breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_item_anchor {
-        display: inline-block;
-        vertical-align: middle;
-        color: #1a9cb7;
-        padding: 0 4px;
-        font-size: 14px;
-        font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
-        max-width: 200px;
-        white-space: nowrap;
-        line-height: 16px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_item_anchor_last {
-        color: #757575;
-        max-width: none;
-        height: 16px;
-        line-height: 16px;
-        white-space: normal;
-      }
-
-      .breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_right_arrow {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACKUExURUxpcYGBgYGBgYWFhYCAgICAgICAgIKCgv///4GBgZWVlYyMjIGBgYCAgIKCgoGBgYGBgaqqqoODg7+/v4GBgZKSko6OjoGBgYWFhYGBgYSEhIGBgZmZmYCAgIGBgYGBgYCAgICAgIGBgYCAgICAgIiIiICAgIeHh4GBgYSEhIODg4GBgYGBgYCAgPLijmAAAAAtdFJOUwCS7jCDi/E1AbYMFJrrK9ToAycEugcJtBfYG64Fp+S+vb+god0e4SLcHyPgwPJLUkAAAAB6SURBVDjLY2AYYoCdkwu/AgVdHTG8Crj5dUVE8aqQkNQVl8GrQkpDV1oYrwpVbV1ZQbwq1OV0lTnwqhAS0OXBr4KPV5cRf3AwM+myEghRNl0WihQQsoKQIwl5U0tOVwmfvKYa/qCWUsEfWYSim2CCkddVFKMs0Q5aAABM4wlSQJ87yAAAAABJRU5ErkJggg==);
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-      }
-    .lzd-header .lzd-logo-bar
-   {
-   background: #570505;
-   }
-   .lzd-header .lzd-logo-bar .logo-bar-content .lzd-logo-content img {
-   width: 180px;
-   height: 40px;
-   }
-     </style>
-     <style>
-      .baxia-dialog { 
- display: none!important; 
- }
-     </style>
+     <style>.breadcrumb_list{width:1188px;height:48px;border-bottom:1px solid #eff0f5;margin:0 auto;overflow:hidden;text-overflow:ellipsis}.breadcrumb_list_empty{height:0;border:none;overflow:hidden}.breadcrumb_list .breadcrumb{padding-left:0;margin-left:-4px;height:48px;vertical-align:middle;display:inline-block;white-space:nowrap}.breadcrumb_list .breadcrumb .breadcrumb_item{position:relative;display:table-cell;vertical-align:middle;font-size:13px;font-weight:300;height:48px}.breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text{vertical-align:middle;padding:0;margin:0;line-height:100%;display:inline-block;font-weight:300}.breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_item_anchor{display:inline-block;vertical-align:middle;color:#1a9cb7;padding:0 4px;font-size:14px;font-family:Roboto-Regular,Helvetica,Arial,sans-serif;max-width:200px;white-space:nowrap;line-height:16px;overflow:hidden;text-overflow:ellipsis}.breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_item_anchor_last{color:#757575;max-width:none;height:16px;line-height:16px;white-space:normal}.breadcrumb_list .breadcrumb .breadcrumb_item .breadcrumb_item_text .breadcrumb_right_arrow{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACKUExURUxpcYGBgYGBgYWFhYCAgICAgICAgIKCgv///4GBgZWVlYyMjIGBgYCAgIKCgoGBgYGBgaqqqoODg7+/v4GBgZKSko6OjoGBgYWFhYGBgYSEhIGBgZmZmYCAgIGBgYGBgYCAgICAgIGBgYCAgICAgIiIiICAgIeHh4GBgYSEhIODg4GBgYGBgYCAgPLijmAAAAAtdFJOUwCS7jCDi/E1AbYMFJrrK9ToAycEugcJtBfYG64Fp+S+vb+god0e4SLcHyPgwPJLUkAAAAB6SURBVDjLY2AYYoCdkwu/AgVdHTG8Crj5dUVE8aqQkNQVl8GrQkpDV1oYrwpVbV1ZQbwq1OV0lTnwqhAS0OXBr4KPV5cRf3AwM+myEghRNl0WihQQsoKQIwl5U0tOVwmfvKYa/qCWUsEfWYSim2CCkddVFKMs0Q5aAABM4wlSQJ87yAAAAABJRU5ErkJggg==);background-repeat:no-repeat;background-size:contain;display:inline-block;width:16px;height:16px;vertical-align:middle}.lzd-header .lzd-logo-bar{background:#1c5938}.lzd-header .lzd-logo-bar .logo-bar-content .lzd-logo-content img{width:180px;height:40px}</style>
+     <style>.baxia-dialog{display:none!important}</style>
      <div class="breadcrumb_list breadcrumb_custom_cls" id="J_breadcrumb_list">
       <ul class="breadcrumb" id="J_breadcrumb">
       </ul>
      </div>
-     <script>
-      function htmlEncodePdp(input) {
-        var el = document.createElement("div");
-        el.innerText = input;
-        return el.innerHTML;
-      };
-      window.LZD = window.LZD || {};
-      window.LZD.updateBreadcrumb = function (list) {
-        if (!list || !list instanceof Array) {
-          return;
-        }
-        var parentNode = document.getElementById('J_breadcrumb');
-        while (parentNode.hasChildNodes()) {
-          parentNode.removeChild(parentNode.firstChild);
-        }
-        var size = list.length;
-        for (var i = 0; i < size; i++) {
-          var item = list[i];
-          item.title = htmlEncodePdp(item.title);
-          var liNode = document.createElement("li");
-          liNode.className = 'breadcrumb_item';
-          if (i === size - 1) {
-            liNode.innerHTML = '<span class="breadcrumb_item_text">' +
-              '<span class="breadcrumb_item_anchor breadcrumb_item_anchor_last">' + item.title + '</span>' +
-              '</span>';
-          } else {
-            if(item.url) {
-              item.url = window.location.host.indexOf('h5.lazada.') > -1 ? item.url.replace('www.lazada.', 'h5.lazada.') : item.url;
-            }
-            liNode.innerHTML = '<span class="breadcrumb_item_text">' +
-              '<a title="' + item.title + '" href="' + item.url + '" class="breadcrumb_item_anchor">' +
-              '<span>' + item.title + '</span>' +
-              '</a>' +
-              '<div class="breadcrumb_right_arrow"></div>' +
-              '</span>';
-          }
-          parentNode.appendChild(liNode);
-        }
-        var breadcrumbListNode = document.getElementById('J_breadcrumb_list');
-        var cls = breadcrumbListNode.className;
-        if (size === 0) {
-          if (cls.indexOf('breadcrumb_list_empty') < 0) {
-            breadcrumbListNode.className = 'breadcrumb_list_empty';
-          }
-        } else {
-          breadcrumbListNode.className = 'breadcrumb_list';
-        }
-      }
-     </script>
+     <script>function htmlEncodePdp(input){var el=document.createElement("div");el.innerText=input;return el.innerHTML;};window.LZD=window.LZD||{};window.LZD.updateBreadcrumb=function(list){if(!list||!list instanceof Array){return;}var parentNode=document.getElementById('J_breadcrumb');while(parentNode.hasChildNodes()){parentNode.removeChild(parentNode.firstChild);}var size=list.length;for(var i=0;i<size;i++){var item=list[i];item.title=htmlEncodePdp(item.title);var liNode=document.createElement("li");liNode.className='breadcrumb_item';if(i===size-1){liNode.innerHTML='<span class="breadcrumb_item_text">'+'<span class="breadcrumb_item_anchor breadcrumb_item_anchor_last">'+item.title+'</span>'+'</span>';}else{if(item.url){item.url=window.location.host.indexOf('h5.lazada.')>-1?item.url.replace('www.lazada.','h5.lazada.'):item.url;}liNode.innerHTML='<span class="breadcrumb_item_text">'+'<a title="'+item.title+'" href="'+item.url+'" class="breadcrumb_item_anchor">'+'<span>'+item.title+'</span>'+'</a>'+'<div class="breadcrumb_right_arrow"></div>'+'</span>';}parentNode.appendChild(liNode);}var breadcrumbListNode=document.getElementById('J_breadcrumb_list');var cls=breadcrumbListNode.className;if(size===0){if(cls.indexOf('breadcrumb_list_empty')<0){breadcrumbListNode.className='breadcrumb_list_empty';}}else{breadcrumbListNode.className='breadcrumb_list';}}</script>
     </div>
    </div>
   </div>
@@ -3809,40 +3513,18 @@ if (!lzdDocCookies.getItem('t_uid')) {
        <div class="item-gallery">
         <div class="gallery-preview-panel">
          <div class="gallery-preview-panel__content">
-          <img alt="<?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture" class="pdp-mod-common-image gallery-preview-panel__image" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7AdagEhkEnQPrqYo3X1Mz9P_HhnJaCUOiMppShdFPClzc5LnHqT7wRN22pq2NCD-hrl_WYE_P-jM3FwDuaeHtHKMCOHik5wmJbKJwMpDE0qHV8CZtpPYbse2jLxQ6ipw6xI8FV3ppDX-/s640/images+%252835%2529.jpeg"/>
+          <img alt="  <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional" class="pdp-mod-common-image gallery-preview-panel__image" loading="lazy" src="https://man1jepara.sch.id/wp-content/uploads/2023/02/Screenshot_1-768x382.png"/>
          </div>
         </div>
         <div class="button-login-daftar">
-         <a class="register" href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>" rel="nofollow noreferrer">
+         <a class="register" href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" rel="nofollow noreferrer">
           LOGIN
          </a>
-         <a class="login" href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>" rel="nofollow noreferrer">
+         <a class="login" href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" rel="nofollow noreferrer">
           DAFTAR
          </a>
         </div>
-        <style>
-         .button-login-daftar {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      font-weight: 700;
-      }
-      .button-login-daftar a {
-      text-align: center;
-      }
-      .login, .register {
-      color: #ffffff;
-      padding: 30px 10px;
-      }
-      .login, .login-button {
-      border: 1px solid #ffffff;
-      background: linear-gradient(to bottom, #df1212 0, #160303 100%);
-      border: 1px solid #ffffff;
-      }
-      .register, .register-button {
-      background: linear-gradient(to bottom, #31b53d 0, #160303 100%);
-      border: 1px solid #ffffff;
-      }
-        </style>
+        <style>.button-login-daftar{display:grid;grid-template-columns:repeat(2,1fr);font-weight:700}.button-login-daftar a{text-align:center}.login,.register{color:#fff;padding:30px 10px}.login,.login-button{border:1px solid #fff;background:linear-gradient(to bottom,#1c5938 0,#5d481a 100%);border:1px solid #fff}.register,.register-button{background:linear-gradient(to bottom,#1c5938 0,#5d481a 100%);border:1px solid #fff}</style>
        </div>
       </div>
      </div>
@@ -3859,7 +3541,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
          <div class="pdp-product-title">
           <div class="pdp-mod-product-badge-wrapper">
            <h1 class="pdp-mod-product-badge-title">
-            <?php echo $BRANDS ?> x FISIP Uniga – Pioneer is Our Culture
+             <?php echo $BRANDS ?> Lembaga MAN 1 JEPARA - Unggulan akademik dan Riset Nasional
            </h1>
           </div>
          </div>
@@ -3878,7 +3560,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
              <img class="star" loading="lazy" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/>
             </div>
             <a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link">
-             888.888.888 Rating
+             888.8.88 Penilaian
             </a>
            </div>
           </div>
@@ -3904,7 +3586,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
            :
           </span>
           <a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" href="<?php echo $urlPath ?>" target="_self">
-           <?php echo $BRANDS ?>
+          <?php echo $BRANDS ?>
           </a>
           <div class="pdp-product-brand__divider">
           </div>
@@ -3917,15 +3599,11 @@ if (!lzdDocCookies.getItem('t_uid')) {
         <div class="pdp-block module" id="module_product_price_1">
          <div class="pdp-mod-product-price">
           <p>
-
-
-           <?php echo $BRANDS ?> Menyadari akan adanya kebutuhan yang diakibatkan oleh dinamika perubahan yang sedang berlangsung, baik yang berasal dari pemerintah dan internal organisasi serta tuntutan masyarakat sebagai pengguna jasa pendidikan itu sendiri, maka Program Studi S1 Administrasi Publik menyediakan 3 pilihan konsentrasi yaitu Konsentrasi Kebijakan Publik, Manajemen Publik dan Keuangan Publik.
-
-
+           <?php echo $BRANDS ?> adalah Lembaga Madrasah Aliyah Negeri 1 Jepara, sebuah lembaga pendidikan Islam setingkat SMA di bawah naungan Kementerian Agama, Menurut pencarian Google, MAN 1 Jepara merupakan salah satu madrasah terbaik di Indonesia  
           </p>
           <div bis_skin_checked="1" class="pdp-product-price">
            <span class="notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl">
-            Rp.88.888
+            Rp.25.000
            </span>
            <div bis_skin_checked="1" class="origin-block">
             <span class="notranslate pdp-price pdp-price_type_deleted pdp-price_color_lightgray pdp-price_size_xs">
@@ -3999,7 +3677,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
          <div class="seller-name">
           <div class="seller-name__wrapper">
            <div class="seller-name__title">
-            Dijual oleh <?php echo $BRANDS ?>
+            <?php echo $BRANDS ?>
            </div>
            <div class="seller-name__detail">
             <a class="pdp-link pdp-link_size_l pdp-link_theme_black seller-name__detail-name">
@@ -4009,40 +3687,23 @@ if (!lzdDocCookies.getItem('t_uid')) {
          </div>
          <div class="pdp-seller-info-pc">
 <div class="seller-name__title">
-<a style="background: #f36f36; display: inline-block; color:#0F136D ; padding: 2px 4px; cursor: pointer;">
-            <?php echo $BRANDS ?>
-</a>
            </div>
          </div>
         </div>
        </div>
        <div class="pdp-block module" id="module_redmart_seller_info">
-
-
-
        </div>
       </div>
      </div>
     </div>
    </div>
   </div>
-  <script>
-   // add crossorigin for error monitoring
-    var requirejs = {
-      onNodeCreated: function (node, config, id, url) {
-        node.setAttribute('crossorigin', 'anonymous');
-      }
-    };
-  </script>
-  <script charset="utf-8" src="https://g.lazcdn.com/g/??mtb/lib-promise/3.1.3/polyfillB.js,mtb/lib-mtop/2.5.1/mtop.js,lazada-decorate/lazada-mod-lib/0.0.20/LazadaModLib.min.js">
-  </script>
-  <script src="https://g.lazcdn.com/g/woodpeckerx/jssdk??wpkReporter.js,plugins/flow.js,plugins/interface.js,plugins/blank.js">
-  </script>
+  <script>var requirejs={onNodeCreated:function(node,config,id,url){node.setAttribute('crossorigin','anonymous');}};</script>
+  <script charset="utf-8" src="https://g.lazcdn.com/g/??mtb/lib-promise/3.1.3/polyfillB.js,mtb/lib-mtop/2.5.1/mtop.js,lazada-decorate/lazada-mod-lib/0.0.20/LazadaModLib.min.js"></script>
+  <script src="https://g.lazcdn.com/g/woodpeckerx/jssdk??wpkReporter.js,plugins/flow.js,plugins/interface.js,plugins/blank.js"></script>
   <input id="footer-pc-config" type="hidden" value='{"voyagerVersion":"2","voyagerEnv":"product","assetsRefactor":false,"regionID":"ID","language":"id","react":false,"needUmid":false,"channel":"pdp","customName":"default","version":{"nav":"5.2.38","search":"0.4.11","menu":"5.0.45","menuNav":"5.0.73","suffix":""},"needRetCode":true,"retCodePageName":"","hideCategory":true,"needReact":false,"thymeleaf":true,"grayFilter":{"TH":false,"SG":false,"MY":false,"ID":false,"PH":false,"VN":false},"isHomePage":false,"isMiniHeader":false,"java":true}'/>
   <link href="https://g.lazcdn.com/g/lzdmod/desktop-footer/6.1.1/??pc/index.css" rel="stylesheet"/>
-  <script>
-   window.g_config = window.g_config || {};window.g_config.loadedCss = window.g_config.loadedCss || [];window.g_config.loadedCss = ["@ali/lzdmod-desktop-footer/pc/index.css"];
-  </script>
+  <script>window.g_config=window.g_config||{};window.g_config.loadedCss=window.g_config.loadedCss||[];window.g_config.loadedCss=["@ali/lzdmod-desktop-footer/pc/index.css"];</script>
   <div class="mui-zebra-module" data-module-id="1056575960" data-version="6.1.1" id="J_1056575960">
    <script class="J-dynamic-data" type="text/data">
    </script>
@@ -4080,7 +3741,9 @@ if (!lzdDocCookies.getItem('t_uid')) {
          </a>
         </li>
         <li class="--js-csc-trigger">
+         <a style="background: #f36f36; display: inline-block; color:#0F136D ; padding: 2px 4px; cursor: pointer;">
           Ada pertanyaan? Hubungi kami di live chat (24 Jam)
+         </a>
         </li>
        </ul>
       </div>
@@ -4096,7 +3759,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
         </li>
         <li class="footer-li">
          <a href="<?php echo $urlPath ?>">
-          Afﬁliate Program
+          Afiliate Program
          </a>
         </li>
         <li class="footer-li">
@@ -4258,7 +3921,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
       </div>
       <div class="lzd-footer-width-25">
        <div class="lzd-footer-copyright">
-        © Lazada 2024
+        <?php echo $BRANDS ?> Login | Lazada 2024
        </div>
       </div>
      </div>
@@ -4266,176 +3929,26 @@ if (!lzdDocCookies.getItem('t_uid')) {
    </section>
    <div id="webim-container" onclick="javascript:goldlog.record('/lazada.IM.im-msgbox','CLK','platform=desktop&amp;pagename='+ window.LZD_RETCODE_PAGENAME || 'other','GET')">
    </div>
-   <script>
-    // var imJsLink = 'https://g.lazcdn.com/g/lzdmod/im/5.0.103/index.js';
-var imCssLink = 'https://g.lazcdn.com/g/lzdmod/im/5.0.103/index.css';
-var gConfig = window.g_config || {};
-   </script>
-   <style>
-    .m-common-more .link-lazada-ic-Message{
-        display: none;
-      }
-   </style>
+   <script>var imCssLink='https://g.lazcdn.com/g/lzdmod/im/5.0.103/index.css';var gConfig=window.g_config||{};</script>
+   <style>.m-common-more .link-lazada-ic-Message{display:none}</style>
   </div>
-  <script src="https://g.lazcdn.com/g/??mui/feloader/5.0.0/feloader-min.js,lzdmod/site-nav-pc/5.2.38/pc/index.js,lzdmod/jquery/5.0.9/index.js,lzdmod/site-nav-pc/5.2.38/assets/links-bar/index.js,lzdmod/common-info/5.0.30/index.js,lzdmod/site-nav-pc/5.2.38/assets/reqwest/index.js,lzdmod/site-nav-pc/5.2.38/assets/common/popper/index.js,lzdmod/site-nav-pc/5.2.38/assets/cart/index.js,lzdmod/site-nav-pc/5.2.38/assets/download-app/index.js,lzdmod/site-nav-pc/5.2.38/i18n.js,lzdmod/site-nav-pc/5.2.38/assets/track-order/index.js,lzdmod/site-nav-pc/5.2.38/assets/switch-lang/index.js,lzdmod/site-nav-pc/5.2.38/assets/user-info/index.js,lzdmod/site-nav-pc/5.2.38/assets/affiliate/index.js,lzdmod/site-nav-pc/5.2.38/assets/logo-bar/index.js,lzdmod/site-nav-pc/5.2.38/assets/search-box/index.js,lzdmod/site-nav-pc/5.2.38/assets/liveup/index.js,lzdmod/site-menu-pc/5.0.45/pc/index.js,lzdmod/site-menu-nav-pc/5.0.73/pc/index.js,lzdmod/desktop-footer/6.1.1/pc/index.js,lzdmod/desktop-footer/6.1.1/pc/reqwest/index.js">
-  </script>
-  <script>
-   (function(S) {
-  window.g_config = window.g_config || {};
-  S.config(window.g_config.seed);
-  S.config('combine', true);
-  feloader.noConflict();
-})(feloader);
-  </script>
-  <script>
-   feloader.require('@ali/lzdmod-site-nav-pc/pc/index',function(mod){
-    mod()
-  });
-  </script>
+  <script src="https://g.lazcdn.com/g/??mui/feloader/5.0.0/feloader-min.js,lzdmod/site-nav-pc/5.2.38/pc/index.js,lzdmod/jquery/5.0.9/index.js,lzdmod/site-nav-pc/5.2.38/assets/links-bar/index.js,lzdmod/common-info/5.0.30/index.js,lzdmod/site-nav-pc/5.2.38/assets/reqwest/index.js,lzdmod/site-nav-pc/5.2.38/assets/common/popper/index.js,lzdmod/site-nav-pc/5.2.38/assets/cart/index.js,lzdmod/site-nav-pc/5.2.38/assets/download-app/index.js,lzdmod/site-nav-pc/5.2.38/i18n.js,lzdmod/site-nav-pc/5.2.38/assets/track-order/index.js,lzdmod/site-nav-pc/5.2.38/assets/switch-lang/index.js,lzdmod/site-nav-pc/5.2.38/assets/user-info/index.js,lzdmod/site-nav-pc/5.2.38/assets/affiliate/index.js,lzdmod/site-nav-pc/5.2.38/assets/logo-bar/index.js,lzdmod/site-nav-pc/5.2.38/assets/search-box/index.js,lzdmod/site-nav-pc/5.2.38/assets/liveup/index.js,lzdmod/site-menu-pc/5.0.45/pc/index.js,lzdmod/site-menu-nav-pc/5.0.73/pc/index.js,lzdmod/desktop-footer/6.1.1/pc/index.js,lzdmod/desktop-footer/6.1.1/pc/reqwest/index.js"></script>
+  <script>(function(S){window.g_config=window.g_config||{};S.config(window.g_config.seed);S.config('combine',true);feloader.noConflict();})(feloader);</script>
+  <script>feloader.require('@ali/lzdmod-site-nav-pc/pc/index',function(mod){mod()});</script>
   <div th:if="${script} ne null and ${script.umid} ne null and ${script.umid} eq true">
   </div>
-  <script>
-   (function () {
-      try {
-        var webVitalsScript = document.createElement('script');
-        webVitalsScript.src = 'https://g.lazcdn.com/g/lzd/assets/1.2.10/web-vitals/3.4.0/index.js';
-        webVitalsScript.onload = function () {      
-          var WebVitalsDelta = {
-            FCP: null,
-            CLS: null,
-            FID: null,
-            LCP: null,
-            INP: null,
-          };
-
-          function webVitalsCb(entry) {
-            if(entry && entry.name && entry.delta ) {
-              WebVitalsDelta[entry.name] = entry.delta;
-              if (entry.name === 'INP') {
-                webVitalsSingleReport(entry);
-              } else if (window.requestIdleCallback) {
-                window.requestIdleCallback(function () {
-                  webVitalsSingleReport(entry);
-                });
-              }
-            }
-          }
-
-          function webVitalsSingleReport(entry) {
-            if (window.__wpk && window.__wpk.report) {
-              var name = entry && entry.name || '';
-              var delta = entry  && entry.delta || '';
-              const categories = {
-                FCP: 101,
-                CLS: 103,
-                FID: 104,
-                LCP: 102,
-                INP: 119
-              };
-              window.__wpk.report({
-                category: categories[name],
-                msg: window.location.host,
-                wl_avgv1: delta,
-                bl1: entry &&  Object.prototype.toString.call(entry) === "[object Object]" ? JSON.stringify(entry) : '',
-                c1: entry && entry.rating ||''
-              });
-            }
-          }
-          window.webVitals.getFCP(webVitalsCb);
-          window.webVitals.getCLS(webVitalsCb);
-          window.webVitals.getFID(webVitalsCb);
-          window.webVitals.getLCP(webVitalsCb);
-          window.webVitals.getINP(webVitalsCb);
-        };
-        // if(document.head) document.head.appendChild(webVitalsScript);
-        function report() {
-          var fsp = null;
-          var csr = null;
-          if (timings.start && timings.render) {
-            // for ssr
-            if (timings.ssr) {
-              fsp = timings.ssr - timings.start;
-              csr = timings.render - timings.ssr;
-            } else {
-              fsp = timings.render - timings.start;
-            }
-          }
-          if (fsp && window.__wpk && window.__wpk.report) {
-            __wpk.report({
-              category: 105,
-              msg: window.location.host,
-              wl_avgv1: fsp,
-              wl_avgv2: csr || 0,
-              c1: window.__hasSSR__ ? 1 : 0,
-            });
-          }
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-          if (window.timings) {
-            if (window.timings.render) {
-              report();
-            } else {
-              setTimeout(function () {
-                report();
-              }, 3000);
-            }
-          }
-        })
-      } catch (err) {
-        console.log(err && err.message)
-      }
-    })();
-  </script>
-  <style>
-   .fixed-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #222;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    z-index: 9999;
-    font-family: sans-serif;
-}
-.fixed-footer a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-}
-.fixed-footer a i {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-  </style>
+  <script>(function(){try{var webVitalsScript=document.createElement('script');webVitalsScript.src='https://g.lazcdn.com/g/lzd/assets/1.2.10/web-vitals/3.4.0/index.js';webVitalsScript.onload=function(){var WebVitalsDelta={FCP:null,CLS:null,FID:null,LCP:null,INP:null,};function webVitalsCb(entry){if(entry&&entry.name&&entry.delta){WebVitalsDelta[entry.name]=entry.delta;if(entry.name==='INP'){webVitalsSingleReport(entry);}else if(window.requestIdleCallback){window.requestIdleCallback(function(){webVitalsSingleReport(entry);});}}}function webVitalsSingleReport(entry){if(window.__wpk&&window.__wpk.report){var name=entry&&entry.name||'';var delta=entry&&entry.delta||'';const categories={FCP:101,CLS:103,FID:104,LCP:102,INP:119};window.__wpk.report({category:categories[name],msg:window.location.host,wl_avgv1:delta,bl1:entry&&Object.prototype.toString.call(entry)==="[object Object]"?JSON.stringify(entry):'',c1:entry&&entry.rating||''});}}window.webVitals.getFCP(webVitalsCb);window.webVitals.getCLS(webVitalsCb);window.webVitals.getFID(webVitalsCb);window.webVitals.getLCP(webVitalsCb);window.webVitals.getINP(webVitalsCb);};function report(){var fsp=null;var csr=null;if(timings.start&&timings.render){if(timings.ssr){fsp=timings.ssr-timings.start;csr=timings.render-timings.ssr;}else{fsp=timings.render-timings.start;}}if(fsp&&window.__wpk&&window.__wpk.report){__wpk.report({category:105,msg:window.location.host,wl_avgv1:fsp,wl_avgv2:csr||0,c1:window.__hasSSR__?1:0,});}}document.addEventListener('DOMContentLoaded',function(){if(window.timings){if(window.timings.render){report();}else{setTimeout(function(){report();},3000);}}})}catch(err){console.log(err&&err.message)}})();</script>
+  <style>.fixed-footer{position:fixed;bottom:0;left:0;right:0;background:#1c5938;color:#fff;display:flex;justify-content:space-around;align-items:center;padding:10px 0;z-index:9999;font-family:sans-serif}.fixed-footer a{color:#fff;text-decoration:none;text-align:center;font-size:14px}.fixed-footer a i{s
+    display: block;font-size:18px;margin-bottom:5px}</style>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <div class="fixed-footer">
-   <a href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>">
-    <i class="fas fa-sign-in-alt">
-    </i>
-    Login
-   </a>
-   <a href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>">
-    <i class="fas fa-comments">
-    </i>
-    Livechat
-   </a>
-   <a href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>" target="_blank">
-    <i class="fab fa-whatsapp">
-    </i>
-    WhatsApp
-   </a>
-   <a href="https://fisipuniga-ae08b.web.app/?sini=<?php echo $BRANDS ?>" target="_blank">
-    <i class="fab fa-telegram-plane">
-    </i>
-    Telegram
-   </a>
+  <a href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>"><i class="fas fa-sign-in-alt"></i>Login</a>
+<a href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>"><i class="fas fa-comments"></i>Livechat</a>
+<a href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+<a href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" target="_blank"><i class="fab fa-telegram-plane"></i>Telegram</a>
+<a href="https://man1jepara-log.web.app/?log=<?php echo $BRANDS ?>" target="_blank"><i class="fab fa-telegram-plane"></i>Telegram Group</a>
   </div>
- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96d6b8c50d5c40b8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"9b49c97549154afe930c0fa6d9989f2e"}' crossorigin="anonymous"></script>
+
+ <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"949622bf29f17a82","version":"2025.5.0","r":1,"token":"b1992e24c6a649218be582dff2fead2b","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
 </body>
 </html>
